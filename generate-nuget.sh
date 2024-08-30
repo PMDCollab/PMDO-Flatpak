@@ -4,7 +4,8 @@ set -e
 git clone https://github.com/PMDCollab/PMDC PMDC || true
 (
     cd PMDC
-    git pull
+    git fetch
+    git checkout v0.8.4
     git submodule update --init --recursive
 )
 
