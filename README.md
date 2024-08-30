@@ -1,6 +1,6 @@
 # PMDO Flatpak
 
-This repo contains a Flatpak for [PMDC](https://github.com/PMDCollab/PMDC/) + [PMDO Assets](https://github.com/audinowho/PMDODump).
+This repo contains a Flatpak for [PMDC](https://github.com/PMDCollab/PMDC/) + [PMDO Assets](https://github.com/audinowho/DumpAsset).
 
 To build the Flatpak:
 
