@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>org.pmdcollab.pmdo</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>MIT</project_license>
+  <name>PMDO</name>
+  <developer id="org.pmdcollab.audino">
+    <name>Audino</name>
+  </developer>
+  <summary>...</summary>
+
+  <description>
+    <p>
+      ...
+    </p>
+  </description>
+
+  <branding>
+    <color type="primary" scheme_preference="light">...</color>
+    <color type="primary" scheme_preference="dark">...</color>
+  </branding>
+
+  <launchable type="desktop-id">org.pmdcollab.pmdo.desktop</launchable>
+
+  <screenshots>
+    <screenshot type="default">
+      <caption>...</caption>
+      <image>...</image>
+    </screenshot>
+    <screenshot>
+      <caption>...</caption>
+      <image>...</image>
+    </screenshot>
+    <screenshot>
+      <caption>...</caption>
+      <image>...</image>
+    </screenshot>
+  </screenshots>
+
+  <url type="homepage">...</url>
+  <url type="vcs-browser">...</url>
+  <url type="bugtracker">...</url>
+  <project_group>PMDCollab</project_group>
+</component>

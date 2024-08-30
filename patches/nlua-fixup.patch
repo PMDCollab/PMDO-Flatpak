@@ -1,0 +1,15 @@
+--- PMDC/RogueEssence/NLua/build/net6.0/NLua.net6.0.csproj
++++ PMDC/RogueEssence/NLua/build/net6.0/NLua.net6.0.csproj
+@@ -21,12 +21,6 @@
+     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+     <WarningsAsErrors />
+   </PropertyGroup>
+-  <ItemGroup>
+-    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.1.0">
+-      <PrivateAssets>all</PrivateAssets>
+-      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+-    </PackageReference>
+-  </ItemGroup>
+   <Import Project="..\..\src\NLua.Shared.projitems" Label="Shared" Condition="Exists('..\..\src\NLua.Shared.projitems')" />
+   <ItemGroup>
+     <PackageReference Include="System.Reflection.Emit" Version="4.7.0" />

@@ -1,0 +1,23 @@
+--- PMDC/RogueEssence/RogueEssence/PathMod.cs
++++ PMDC/RogueEssence/RogueEssence/PathMod.cs
+@@ -57,7 +57,10 @@
+         public static void InitPathMod(string path)
+         {
+             ExeName = Path.GetFileName(path);
+-            ExePath = Path.GetDirectoryName(path) + "/";
++            // Change the path where all write operations are attempted to to an XDG dir.
++            ExePath = Path.Join(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "PMDO");
++            Directory.CreateDirectory(ExePath);
++            // The asset path is later overwritten with the -assets flag.
+             ASSET_PATH = ExePath;
+             DEV_PATH = ExePath + "RawAsset/";
+             BaseNamespace = "";
+@@ -237,7 +240,7 @@
+         }
+         public static string NoMod(string basePath)
+         {
+-            return Path.Join(ASSET_PATH, basePath);
++            return Path.Join(ExePath, basePath);
+         }
+         public static string FromExe(string basePath)
+         {
