@@ -8,7 +8,7 @@
 +            // Change the path where all write operations are attempted to to an XDG dir.
 +            ExePath = Path.Join(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "PMDO");
 +            Directory.CreateDirectory(ExePath);
-+            // The asset path is later overwritten with the -assets flag.
++            // The asset path is later overwritten with the -asset flag.
              ASSET_PATH = ExePath;
              DEV_PATH = ExePath + "RawAsset/";
              BaseNamespace = "";
