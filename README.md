@@ -14,6 +14,7 @@ To update:
 - Update the commit hash in `org.pmdcollab.pmdo.yml` to the latest commit of PMDO Assets.
 - Re-generate the nuget sources by running `./generate-nuget.sh`. You will need Python for this and you
   need to have the submodules checked out.
+- Add release to `org.pmdcollab.pmdo.appdata.xml`.
 
 To run:
 - Launch the app "PMDO" using the desktop of your choice, or

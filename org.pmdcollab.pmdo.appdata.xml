@@ -7,38 +7,46 @@
   <developer id="org.pmdcollab.audino">
     <name>Audino</name>
   </developer>
-  <summary>...</summary>
+  <summary>Pokémon Mystery Dungeon fangame for desktop computers</summary>
 
   <description>
     <p>
-      ...
+      In Pokémon Mystery Dungeon: Origins, you control a team of Pokémon, and explore Guildmaster Island. 
+      Your goal is to reach the fabled summit, and earning the right to lead a guild yourself. 
+      You will find many other teams with similar goals and stories. 
+      Befriend wild Pokémon with apricorns to add them to your team, and build an assembly of Pokémon worthy 
+      of reaching the top!
     </p>
   </description>
 
   <branding>
-    <color type="primary" scheme_preference="light">...</color>
-    <color type="primary" scheme_preference="dark">...</color>
+    <color type="primary" scheme_preference="light">#ffeba9</color>
+    <color type="primary" scheme_preference="dark">#6bbd42</color>
   </branding>
 
   <launchable type="desktop-id">org.pmdcollab.pmdo.desktop</launchable>
 
   <screenshots>
     <screenshot type="default">
-      <caption>...</caption>
-      <image>...</image>
+      <image>https://pmdcollab.org/assets/pmdo/screenshot1.png</image>
     </screenshot>
     <screenshot>
-      <caption>...</caption>
-      <image>...</image>
+      <image>https://pmdcollab.org/assets/pmdo/screenshot2.png</image>
     </screenshot>
     <screenshot>
-      <caption>...</caption>
-      <image>...</image>
+      <image>https://pmdcollab.org/assets/pmdo/screenshot3.png</image>
     </screenshot>
   </screenshots>
 
-  <url type="homepage">...</url>
-  <url type="vcs-browser">...</url>
-  <url type="bugtracker">...</url>
+  <releases>
+    <release version="0.8.4" date="2024-08-26">
+      <description>Changelog can be found on GitHub (https://github.com/audinowho/PMDODump/releases/tag/v0.8.4).</description>
+      <url>https://github.com/audinowho/PMDODump/releases/tag/v0.8.4</url>
+    </release>
+  </releases>  
+
+  <url type="homepage">https://wiki.pmdo.pmdcollab.org/</url>
+  <url type="vcs-browser">https://github.com/audinowho/PMDODump</url>
+  <url type="bugtracker">https://github.com/audinowho/PMDODump/issues</url>
   <project_group>PMDCollab</project_group>
 </component>
