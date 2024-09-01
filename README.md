@@ -21,7 +21,9 @@ To run:
 - `flatpak run org.pmdcollab.pmdo`
 
 To run with custom assets or arguments pass additional arguments to the run command like so:
-- `flatpak run org.pmdcollab.pmdo foobar`
+- `flatpak run org.pmdcollab.pmdo foobar`.
 
 By default (when no arguments are given) PMDO is launched with the arguments 
 `-asset /app/share/PMDO/Assets/` which point to the bundled assets.
+
+`-appdata` is additionally ALWAYS added as an argument last.

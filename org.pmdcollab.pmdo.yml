@@ -12,16 +12,13 @@ finish-args:
   - "--filesystem=host"
   - "--device=all"
 sdk-extensions:
-  - "org.freedesktop.Sdk.Extension.dotnet7"
+  - "org.freedesktop.Sdk.Extension.dotnet8"
 build-options:
-  append-path: /usr/lib/sdk/dotnet7/bin
-  append-ld-library-path: /usr/lib/sdk/dotnet7/lib
+  append-path: /usr/lib/sdk/dotnet8/bin
+  append-ld-library-path: /usr/lib/sdk/dotnet8/lib
   env:
-    PKG_CONFIG_PATH: /app/lib/pkgconfig:/app/share/pkgconfig:/usr/lib/pkgconfig:/usr/share/pkgconfig:/usr/lib/sdk/dotnet7/lib/pkgconfig
+    PKG_CONFIG_PATH: /app/lib/pkgconfig:/app/share/pkgconfig:/usr/lib/pkgconfig:/usr/share/pkgconfig:/usr/lib/sdk/dotnet8/lib/pkgconfig
   arch:
-    arm:
-      env:
-        RUNTIME: linux-arm
     aarch64:
       env:
         RUNTIME: linux-arm64
@@ -39,17 +36,21 @@ modules:
     sources:
       - type: git
         url: https://github.com/PMDCollab/PMDC
-        tag: v0.8.4
-        commit: 3f7c08ebbe7d600c252027d18ca1aa78562f2185
-      - type: patch
-        path: patches/rogue-essence-exe-path.patch
-      - type: patch
-        path: patches/kera-lua-fixup.patch
-      - type: patch
-        path: patches/nlua-fixup.patch
-      - sources-arm.json
+        tag: v0.8.5
+        commit: fa6544b9b26f46527e2cd3b158f3e033e55c5cb5
       - sources-arm64.json
       - sources-x64.json
+      # https://github.com/flatpak/flatpak-builder-tools/issues/420
+      - type: file
+        url: https://api.nuget.org/v3-flatcontainer/microsoft.net.illink.tasks/8.0.8/microsoft.net.illink.tasks.8.0.8.nupkg
+        sha512: 1c2a41e709bc210e925fadc90e8bcd23a389329ef989cd19783f06dc81a520753b4e99f54749ad85b5792763896a02a6cbfad03ee02efaaf94fb14fa96ed7114
+        dest: nuget-sources-linux-arm64
+        dest-filename: microsoft.net.illink.tasks.8.0.8.nupkg
+      - type: file
+        url: https://api.nuget.org/v3-flatcontainer/microsoft.net.illink.tasks/8.0.8/microsoft.net.illink.tasks.8.0.8.nupkg
+        sha512: 1c2a41e709bc210e925fadc90e8bcd23a389329ef989cd19783f06dc81a520753b4e99f54749ad85b5792763896a02a6cbfad03ee02efaaf94fb14fa96ed7114
+        dest: nuget-sources-linux-x64
+        dest-filename: microsoft.net.illink.tasks.8.0.8.nupkg
 
   - name: pmdo-assets
     buildsystem: simple
@@ -58,8 +59,8 @@ modules:
       - cp -r ./ /app/share/PMDO/Assets/
     sources:
       - type: archive
-        url: https://github.com/audinowho/DumpAsset/archive/526984f38da819919a678cd50403415fc8107923.tar.gz
-        sha256: 3d6098ea167e25605846e21ada372ceb5ae4de3b4ca183a15a7f2e54bbf7809a
+        url: https://github.com/audinowho/DumpAsset/archive/897a77991f049ebbeb380207fa56fce1629d5324.tar.gz
+        sha256: 8c76de8797a7c05b5855683f57bacb582a924fee16c7b471252e262eb5960f49
 
   - name: pmdo-meta
     buildsystem: simple
