@@ -1,0 +1,41 @@
+name: Build and Publish
+
+on:
+  push:
+    branches:
+      - main
+  pull_request: {}
+  create:
+    tags:
+      - '*'
+
+jobs:
+  build-deploy:
+    name: Build and deploy Flatpak
+    runs-on: ubuntu-latest
+    container:
+      image: bilelmoussaoui/flatpak-github-actions:freedesktop-23.08
+      options: --privileged
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+      - uses: flatpak/flatpak-github-actions/flatpak-builder@v6
+        name: Build Flatpak
+        with:
+          bundle: org.pmdcollab.pmdo.flatpak
+          manifest-path: org.pmdcollab.pmdo.yml
+          cache-key: flatpak-builder-${{ github.sha }}
+      - uses: flatpak/flatpak-github-actions/flat-manager@v6
+        name: Deploy to SkyTemple Repo Nightly
+        with:
+          repository: nightly
+          flat-manager-url: https://flatpak.skytemple.org/
+          token: ${{ secrets.SKYTEMPLE_FLATPAK_REPO_TOKEN }}
+      - uses: flatpak/flatpak-github-actions/flat-manager@v6
+        name: Deploy to SkyTemple Repo Stable
+        if: startsWith(github.ref, 'refs/tags/')
+        with:
+          repository: stable
+          flat-manager-url: https://flatpak.skytemple.org/
+          token: ${{ secrets.SKYTEMPLE_FLATPAK_REPO_TOKEN }}
