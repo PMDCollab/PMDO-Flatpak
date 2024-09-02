@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=PMDO
-Comment=...
+Comment=Pokémon Mystery Dungeon fangame for desktop computers
 Exec=run-pmdo.sh
 Terminal=false
 Type=Application
