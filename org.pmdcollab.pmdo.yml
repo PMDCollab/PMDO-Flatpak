@@ -32,7 +32,7 @@ modules:
     buildsystem: simple
     build-commands:
       - dotnet publish -c Release --source ./nuget-sources-$RUNTIME --runtime $RUNTIME --self-contained true /p:RuntimeIdentifiers=$RUNTIME PMDC/PMDC.csproj
-      - install -Dm755 /run/build/pmdc/publish/linux-x64/PMDC/PMDC /app/bin/PMDC
+      - install -Dm755 /run/build/pmdc/publish/linux-x64/PMDC/PMDC /app/bin/org.pmdcollab.pmdo
     sources:
       - type: git
         url: https://github.com/PMDCollab/PMDC
