@@ -8,6 +8,11 @@ To build the Flatpak:
 flatpak run org.flatpak.Builder --user --install --force-clean build-dir org.pmdcollab.pmdo.yml
 ```
 
+Requirements:
+
+- org.freedesktop.Sdk 23.08
+- org.freedesktop.Sdk.Extension.dotnet8 23.08
+
 To update:
 
 - Update the tag in `org.pmdcollab.pmdo.yml` and `generate-nuget.sh` to the latest release of PMDC.

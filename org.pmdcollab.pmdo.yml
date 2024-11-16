@@ -36,8 +36,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/PMDCollab/PMDC
-        tag: v0.8.5
-        commit: fa6544b9b26f46527e2cd3b158f3e033e55c5cb5
+        tag: v0.8.6
+        commit: 63c1b8717fe0fef83dfd06cb964f6ba014b334c6
       - sources-arm64.json
       - sources-x64.json
       # https://github.com/flatpak/flatpak-builder-tools/issues/420
@@ -59,8 +59,8 @@ modules:
       - cp -r ./ /app/share/PMDO/Assets/
     sources:
       - type: archive
-        url: https://github.com/audinowho/DumpAsset/archive/897a77991f049ebbeb380207fa56fce1629d5324.tar.gz
-        sha256: 8c76de8797a7c05b5855683f57bacb582a924fee16c7b471252e262eb5960f49
+        url: https://github.com/audinowho/DumpAsset/archive/9fb40c6069dc11a422c94fd319b5835caaab66bd.tar.gz
+        sha256: d4f3be1589be778133a64d3b1f1d3fb0261fc6d871f4b9eff00011d36942f25e
 
   - name: pmdo-meta
     buildsystem: simple

@@ -5,7 +5,7 @@ git clone https://github.com/PMDCollab/PMDC PMDC || true
 (
     cd PMDC
     git fetch
-    git checkout v0.8.5
+    git checkout v0.8.6
     git submodule update --init --recursive
 )
 
