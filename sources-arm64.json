@@ -134,24 +134,24 @@
     },
     {
         "type": "file",
-        "url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.app.ref/6.0.36/microsoft.aspnetcore.app.ref.6.0.36.nupkg",
-        "sha512": "ee15023d0d9c15cf76d28f883b59244e89482eb275a332e21f5a69510545c5243de33d80f2de35282c54398c441f0a1a0ea2962742ca8c33121ae535d770d5cc",
+        "url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.app.ref/6.0.33/microsoft.aspnetcore.app.ref.6.0.33.nupkg",
+        "sha512": "c3af7eb6852e83a6325b4d454101ce1cac3b7aa28cb9fc53d1e01d8808276f7eb52adef6e56be8b2bac1a496e672fe247501cf135aef57f84ad72b717d5d5ddf",
         "dest": "nuget-sources-linux-arm64",
-        "dest-filename": "microsoft.aspnetcore.app.ref.6.0.36.nupkg"
+        "dest-filename": "microsoft.aspnetcore.app.ref.6.0.33.nupkg"
     },
     {
         "type": "file",
-        "url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.app.runtime.linux-arm64/6.0.36/microsoft.aspnetcore.app.runtime.linux-arm64.6.0.36.nupkg",
-        "sha512": "940031fb17f356aee70727d095129c553444969064e90d9117bba5c7ad34907d269350f2d09e7fd08c449308be2b9a448238c2ac6b37ed485cf36995c05f2251",
+        "url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.app.runtime.linux-arm64/6.0.33/microsoft.aspnetcore.app.runtime.linux-arm64.6.0.33.nupkg",
+        "sha512": "badcb3cb4d2de421880b2220b756485a0b8701abd8b6df2210dbb1026ff27008a67c061953a5a95b1d26e84a3c738c2a12c92aac7414bcf6f453712f9a1acc0c",
         "dest": "nuget-sources-linux-arm64",
-        "dest-filename": "microsoft.aspnetcore.app.runtime.linux-arm64.6.0.36.nupkg"
+        "dest-filename": "microsoft.aspnetcore.app.runtime.linux-arm64.6.0.33.nupkg"
     },
     {
         "type": "file",
-        "url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.app.runtime.linux-arm64/8.0.11/microsoft.aspnetcore.app.runtime.linux-arm64.8.0.11.nupkg",
-        "sha512": "cfa9709633e91184bdd061951bf480e66da86175384e3a35ccc9ebbc768f207785807bc48628fd4101ecf6336a9495fbc9cb02aea3c0b9543c02e73fb96fb4f8",
+        "url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.app.runtime.linux-arm64/8.0.8/microsoft.aspnetcore.app.runtime.linux-arm64.8.0.8.nupkg",
+        "sha512": "377d0e494fdd3a68a08de12f375a643cb5f2e1361d47e8663c0709cf4625dc8bb2c84d07eacacaca7a1078cc7d81ead51a42cf019be2b65096d209dfce948ae9",
         "dest": "nuget-sources-linux-arm64",
-        "dest-filename": "microsoft.aspnetcore.app.runtime.linux-arm64.8.0.11.nupkg"
+        "dest-filename": "microsoft.aspnetcore.app.runtime.linux-arm64.8.0.8.nupkg"
     },
     {
         "type": "file",
@@ -211,38 +211,38 @@
     },
     {
         "type": "file",
-        "url": "https://api.nuget.org/v3-flatcontainer/microsoft.netcore.app.host.linux-arm64/6.0.36/microsoft.netcore.app.host.linux-arm64.6.0.36.nupkg",
-        "sha512": "3a50de23763b3e8d2685b7e66f6cd50b168a5e13d420518122a4656efe6f9c2ece42886279fff7d443c1342d1109a11a6b24634efecfdc2724917e34dd8f0d73",
+        "url": "https://api.nuget.org/v3-flatcontainer/microsoft.netcore.app.host.linux-arm64/6.0.33/microsoft.netcore.app.host.linux-arm64.6.0.33.nupkg",
+        "sha512": "5bb5bc18253f62755cf4ebe5d85f1855ed70e5f0eb03970d5bfe55712c69f14604b25d20e975f2dc5d6b1b9d6ceeaf58a75439d0d45d75cefa3ce22b2fd756f4",
         "dest": "nuget-sources-linux-arm64",
-        "dest-filename": "microsoft.netcore.app.host.linux-arm64.6.0.36.nupkg"
+        "dest-filename": "microsoft.netcore.app.host.linux-arm64.6.0.33.nupkg"
     },
     {
         "type": "file",
-        "url": "https://api.nuget.org/v3-flatcontainer/microsoft.netcore.app.host.linux-arm64/8.0.11/microsoft.netcore.app.host.linux-arm64.8.0.11.nupkg",
-        "sha512": "629914865afc8a5df3312571ffb43d64597b092df1fed720752236c005f2a0ac48c3a34e8f597b8a510176adaa2759cf6456e073925f4d425304c1ba6a14b3b0",
+        "url": "https://api.nuget.org/v3-flatcontainer/microsoft.netcore.app.host.linux-arm64/8.0.8/microsoft.netcore.app.host.linux-arm64.8.0.8.nupkg",
+        "sha512": "4547e71a3fee0c61795d0b524df39d027779c23deb224ff360c6feac217145daed75526c4bbf07f5b167eab923a6a9726279b45f91a707ea0aa01a19446dcf16",
         "dest": "nuget-sources-linux-arm64",
-        "dest-filename": "microsoft.netcore.app.host.linux-arm64.8.0.11.nupkg"
+        "dest-filename": "microsoft.netcore.app.host.linux-arm64.8.0.8.nupkg"
     },
     {
         "type": "file",
-        "url": "https://api.nuget.org/v3-flatcontainer/microsoft.netcore.app.ref/6.0.36/microsoft.netcore.app.ref.6.0.36.nupkg",
-        "sha512": "a807238f0daf0cd26b4c8c3b4785162d0bafb2525b5295f14eb7757247c3a563ea1347047a139df42bf08b36c3ec70038dec3356ff8b2af07968e5989e936628",
+        "url": "https://api.nuget.org/v3-flatcontainer/microsoft.netcore.app.ref/6.0.33/microsoft.netcore.app.ref.6.0.33.nupkg",
+        "sha512": "5c4dc40f640fbbf248e5134457f8018a7404624f88c872164611ad3b652019d58255896f50e7d0c4a827d8fdd2a727105713d08d05769b193abc4de329be5663",
         "dest": "nuget-sources-linux-arm64",
-        "dest-filename": "microsoft.netcore.app.ref.6.0.36.nupkg"
+        "dest-filename": "microsoft.netcore.app.ref.6.0.33.nupkg"
     },
     {
         "type": "file",
-        "url": "https://api.nuget.org/v3-flatcontainer/microsoft.netcore.app.runtime.linux-arm64/6.0.36/microsoft.netcore.app.runtime.linux-arm64.6.0.36.nupkg",
-        "sha512": "07766dcd4a57d6547b5e37cbacc87eaec66be65465571e2bda32b4789402caab7f574226c3679b42389ea1026b6b9b1be5541965c4bd2f1346842e5164eac86d",
+        "url": "https://api.nuget.org/v3-flatcontainer/microsoft.netcore.app.runtime.linux-arm64/6.0.33/microsoft.netcore.app.runtime.linux-arm64.6.0.33.nupkg",
+        "sha512": "d9785cd5e755ba2367e1cf048884303c3d48257385ee8091dc96c56dfedb310f196818b333507889c8a6ddcbf29f317a6608cc97e19562e4beeb371ff2b7ceb9",
         "dest": "nuget-sources-linux-arm64",
-        "dest-filename": "microsoft.netcore.app.runtime.linux-arm64.6.0.36.nupkg"
+        "dest-filename": "microsoft.netcore.app.runtime.linux-arm64.6.0.33.nupkg"
     },
     {
         "type": "file",
-        "url": "https://api.nuget.org/v3-flatcontainer/microsoft.netcore.app.runtime.linux-arm64/8.0.11/microsoft.netcore.app.runtime.linux-arm64.8.0.11.nupkg",
-        "sha512": "d40eb91197dc6c08c9e2cc72708fab91edec68d3225a0946e8d4f1859e53103461947cb897c16dfc63e7c287c5043e72f2c0ece476ecdf5f2ae5755ba6a10bd8",
+        "url": "https://api.nuget.org/v3-flatcontainer/microsoft.netcore.app.runtime.linux-arm64/8.0.8/microsoft.netcore.app.runtime.linux-arm64.8.0.8.nupkg",
+        "sha512": "51896e7c095eb80c1ffb82666bfc694f664c4181cac00a09f6ec2156c0ba3bb74b17e8610097ac9ce77e51dada18c773e516cca53df02348a3c56a37fa174974",
         "dest": "nuget-sources-linux-arm64",
-        "dest-filename": "microsoft.netcore.app.runtime.linux-arm64.8.0.11.nupkg"
+        "dest-filename": "microsoft.netcore.app.runtime.linux-arm64.8.0.8.nupkg"
     },
     {
         "type": "file",
