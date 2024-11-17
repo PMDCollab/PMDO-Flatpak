@@ -42,15 +42,15 @@ modules:
       - sources-x64.json
       # https://github.com/flatpak/flatpak-builder-tools/issues/420
       - type: file
-        url: https://api.nuget.org/v3-flatcontainer/microsoft.net.illink.tasks/8.0.8/microsoft.net.illink.tasks.8.0.8.nupkg
-        sha512: 1c2a41e709bc210e925fadc90e8bcd23a389329ef989cd19783f06dc81a520753b4e99f54749ad85b5792763896a02a6cbfad03ee02efaaf94fb14fa96ed7114
+        url: https://api.nuget.org/v3-flatcontainer/microsoft.net.illink.tasks/8.0.11/microsoft.net.illink.tasks.8.0.11.nupkg
+        sha512: 043527c762d2bfc0962b75806cf9cd5adedd79574b067e1567964d512460e1637f5a2d71f8ce16420776cab5beaa7492479965f402a158d52c8865567fe3ac69
         dest: nuget-sources-linux-arm64
-        dest-filename: microsoft.net.illink.tasks.8.0.8.nupkg
+        dest-filename: microsoft.net.illink.tasks.8.0.11.nupkg
       - type: file
-        url: https://api.nuget.org/v3-flatcontainer/microsoft.net.illink.tasks/8.0.8/microsoft.net.illink.tasks.8.0.8.nupkg
-        sha512: 1c2a41e709bc210e925fadc90e8bcd23a389329ef989cd19783f06dc81a520753b4e99f54749ad85b5792763896a02a6cbfad03ee02efaaf94fb14fa96ed7114
+        url: https://api.nuget.org/v3-flatcontainer/microsoft.net.illink.tasks/8.0.11/microsoft.net.illink.tasks.8.0.11.nupkg
+        sha512: 043527c762d2bfc0962b75806cf9cd5adedd79574b067e1567964d512460e1637f5a2d71f8ce16420776cab5beaa7492479965f402a158d52c8865567fe3ac69
         dest: nuget-sources-linux-x64
-        dest-filename: microsoft.net.illink.tasks.8.0.8.nupkg
+        dest-filename: microsoft.net.illink.tasks.8.0.11.nupkg
 
   - name: pmdo-assets
     buildsystem: simple
