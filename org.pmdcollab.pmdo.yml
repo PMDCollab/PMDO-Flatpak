@@ -1,6 +1,6 @@
 app-id: org.pmdcollab.pmdo
 runtime: org.freedesktop.Platform
-runtime-version: '23.08'
+runtime-version: '24.08'
 sdk: org.freedesktop.Sdk
 command: run-pmdo.sh
 finish-args:
@@ -31,7 +31,7 @@ modules:
   - name: pmdc
     buildsystem: simple
     build-commands:
-      - dotnet publish -c Release --source ./nuget-sources-$RUNTIME --runtime $RUNTIME --self-contained true /p:RuntimeIdentifiers=$RUNTIME PMDC/PMDC.csproj
+      - dotnet publish -c Release --source ./nuget-sources-$RUNTIME --source /usr/lib/sdk/dotnet8/nuget/packages --runtime $RUNTIME --self-contained true /p:RuntimeIdentifiers=$RUNTIME PMDC/PMDC.csproj
       - install -Dm755 /run/build/pmdc/publish/linux-x64/PMDC/PMDC /app/bin/org.pmdcollab.pmdo
     sources:
       - type: git
@@ -40,17 +40,6 @@ modules:
         commit: 63c1b8717fe0fef83dfd06cb964f6ba014b334c6
       - sources-arm64.json
       - sources-x64.json
-      # https://github.com/flatpak/flatpak-builder-tools/issues/420
-      - type: file
-        url: https://api.nuget.org/v3-flatcontainer/microsoft.net.illink.tasks/8.0.11/microsoft.net.illink.tasks.8.0.11.nupkg
-        sha512: 043527c762d2bfc0962b75806cf9cd5adedd79574b067e1567964d512460e1637f5a2d71f8ce16420776cab5beaa7492479965f402a158d52c8865567fe3ac69
-        dest: nuget-sources-linux-arm64
-        dest-filename: microsoft.net.illink.tasks.8.0.11.nupkg
-      - type: file
-        url: https://api.nuget.org/v3-flatcontainer/microsoft.net.illink.tasks/8.0.11/microsoft.net.illink.tasks.8.0.11.nupkg
-        sha512: 043527c762d2bfc0962b75806cf9cd5adedd79574b067e1567964d512460e1637f5a2d71f8ce16420776cab5beaa7492479965f402a158d52c8865567fe3ac69
-        dest: nuget-sources-linux-x64
-        dest-filename: microsoft.net.illink.tasks.8.0.11.nupkg
 
   - name: pmdo-assets
     buildsystem: simple
