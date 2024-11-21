@@ -10,8 +10,8 @@ flatpak run org.flatpak.Builder --user --install --force-clean build-dir org.pmd
 
 Requirements:
 
-- org.freedesktop.Sdk 23.08
-- org.freedesktop.Sdk.Extension.dotnet8 23.08
+- org.freedesktop.Sdk 24.08
+- org.freedesktop.Sdk.Extension.dotnet8 24.08
 
 To update:
 

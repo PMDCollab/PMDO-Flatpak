@@ -14,7 +14,7 @@ git clone https://github.com/PMDCollab/PMDC PMDC || true
     PMDC/PMDC/PMDC.csproj \
     --runtime=linux-x64 \
     --dotnet=8 \
-    --freedesktop=23.08 \
+    --freedesktop=24.08 \
     --destdir=nuget-sources-linux-x64
 
 ./flatpak-builder-tools/dotnet/flatpak-dotnet-generator.py \
@@ -22,5 +22,5 @@ git clone https://github.com/PMDCollab/PMDC PMDC || true
     PMDC/PMDC/PMDC.csproj \
     --runtime=linux-arm64 \
     --dotnet=8 \
-    --freedesktop=23.08 \
+    --freedesktop=24.08 \
     --destdir=nuget-sources-linux-arm64
