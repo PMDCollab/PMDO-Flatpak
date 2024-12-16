@@ -36,8 +36,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/PMDCollab/PMDC
-        tag: v0.8.7
-        commit: 056d99a4a081b0f1695e30fefcd70ebb06f2a69c
+        tag: v0.8.8
+        commit: b57df0815930bde5952947fe2568fe31a0fb3cd1
       - sources-arm64.json
       - sources-x64.json
   - name: pmdo-assets
@@ -47,8 +47,8 @@ modules:
       - cp -r ./ /app/share/PMDO/Assets/
     sources:
       - type: archive
-        url: https://github.com/audinowho/DumpAsset/archive/2fd3500bf0f698cf1b596ea071ff2236a0359951.tar.gz
-        sha256: d4dfd01060c85b31abb54dd02836b7bcb83f0e9e8097fbe7b1f3e58b6126ed91
+        url: https://github.com/audinowho/DumpAsset/archive/d28ef562c72e6ab97566141f07a60c98085d7b30.tar.gz
+        sha256: 17bfbe6edc31abd1204af3ef712e0239e9f61361cecaac98421accef3a452e93
 
   - name: pmdo-meta
     buildsystem: simple

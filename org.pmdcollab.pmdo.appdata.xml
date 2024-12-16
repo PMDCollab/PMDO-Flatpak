@@ -39,6 +39,10 @@
   </screenshots>
 
   <releases>
+    <release version="0.8.8" date="2024-12-16">
+      <description>Changelog can be found on GitHub (https://github.com/audinowho/PMDODump/releases/tag/v0.8.8).</description>
+      <url>https://github.com/audinowho/PMDODump/releases/tag/v0.8.8</url>
+    </release>
     <release version="0.8.7" date="2024-11-24">
       <description>Changelog can be found on GitHub (https://github.com/audinowho/PMDODump/releases/tag/v0.8.7).</description>
       <url>https://github.com/audinowho/PMDODump/releases/tag/v0.8.7</url>
